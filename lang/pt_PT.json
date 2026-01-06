@@ -1,0 +1,10 @@
+{
+    "Reset Password Notification": "Recuperação de Palavra-passe",
+    "You are receiving this email because we received a password reset request for your account.": "Recebeu este e-mail porque foi feito um pedido de recuperação de palavra-passe para a sua conta do Wisi",
+    "Reset Password": "Alterar Palavra-passe",
+    "This password reset link will expire in :count minutes.": "Este link de recuperação expira em :count minutos.",
+    "If you did not request a password reset, no further action is required.": "Se não solicitou esta alteração, pode ignorar e apagar este e-mail.",
+    "Regards": "Com os melhores cumprimentos",
+    "Hello!": "Olá!",
+    "Whoops!": "Ups!"
+}
