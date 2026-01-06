@@ -21,10 +21,10 @@ defineProps<{
 
 <template>
     <AuthBase
-        title="Log in to your account"
-        description="Enter your email and password below to log in"
+        title="Entre na sua conta"
+        description="Introduza o seu e-mail e palavra-passe abaixo para fazer login"
     >
-        <Head title="Log in" />
+        <Head title="Entrar" />
 
         <div
             v-if="status"
@@ -41,7 +41,7 @@ defineProps<{
         >
             <div class="grid gap-6">
                 <div class="grid gap-2">
-                    <Label for="email">Email address</Label>
+                    <Label for="email">Endereço de e-mail</Label>
                     <Input
                         id="email"
                         type="email"
@@ -50,7 +50,7 @@ defineProps<{
                         autofocus
                         :tabindex="1"
                         autocomplete="email"
-                        placeholder="email@example.com"
+                        placeholder="email@madeira.gov.pt"
                     />
                     <InputError :message="errors.email" />
                 </div>
@@ -64,7 +64,7 @@ defineProps<{
                             class="text-sm"
                             :tabindex="5"
                         >
-                            Forgot password?
+                            Esqueceu-se da sua senha?
                         </TextLink>
                     </div>
                     <Input
@@ -82,7 +82,7 @@ defineProps<{
                 <div class="flex items-center justify-between">
                     <Label for="remember" class="flex items-center space-x-3">
                         <Checkbox id="remember" name="remember" :tabindex="3" />
-                        <span>Remember me</span>
+                        <span>Lembrar-me</span>
                     </Label>
                 </div>
 
@@ -94,7 +94,7 @@ defineProps<{
                     data-test="login-button"
                 >
                     <Spinner v-if="processing" />
-                    Log in
+                    Entrar
                 </Button>
             </div>
 
@@ -102,8 +102,8 @@ defineProps<{
                 class="text-center text-sm text-muted-foreground"
                 v-if="canRegister"
             >
-                Don't have an account?
-                <TextLink :href="register()" :tabindex="5">Sign up</TextLink>
+                Não tem conta?
+                <TextLink :href="register()" :tabindex="5">Registar</TextLink>
             </div>
         </Form>
     </AuthBase>
