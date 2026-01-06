@@ -6,7 +6,7 @@ import {
     CardContent,
     CardDescription,
     CardHeader,
-    CardTitle,
+    CardTitle
 } from '@/components/ui/card';
 import { useTwoFactorAuth } from '@/composables/useTwoFactorAuth';
 import { regenerateRecoveryCodes } from '@/routes/two-factor';
@@ -42,11 +42,13 @@ onMounted(async () => {
     <Card class="w-full">
         <CardHeader>
             <CardTitle class="flex gap-3">
-                <LockKeyhole class="size-4" />2FA Recovery Codes
+                <LockKeyhole class="size-4" />
+                Códigos de recuperação de 2FA
             </CardTitle>
             <CardDescription>
-                Recovery codes let you regain access if you lose your 2FA
-                device. Store them in a secure password manager.
+                Os códigos de recuperação permitem recuperar o acesso caso perca o seu dispositivo de autenticação de
+                dois fatores (2FA).
+                Armazene-os num gestor de senhas seguro.
             </CardDescription>
         </CardHeader>
         <CardContent>
@@ -58,8 +60,8 @@ onMounted(async () => {
                         :is="isRecoveryCodesVisible ? EyeOff : Eye"
                         class="size-4"
                     />
-                    {{ isRecoveryCodesVisible ? 'Hide' : 'View' }} Recovery
-                    Codes
+                    {{ isRecoveryCodesVisible ? 'Esconder' : 'Ver' }} Recuperação
+                    Códigos
                 </Button>
 
                 <Form
@@ -75,7 +77,8 @@ onMounted(async () => {
                         type="submit"
                         :disabled="processing"
                     >
-                        <RefreshCw /> Regenerate Codes
+                        <RefreshCw />
+                        Regenerar códigos
                     </Button>
                 </Form>
             </div>
@@ -111,10 +114,10 @@ onMounted(async () => {
                         </div>
                     </div>
                     <p class="text-xs text-muted-foreground select-none">
-                        Each recovery code can be used once to access your
-                        account and will be removed after use. If you need more,
-                        click
-                        <span class="font-bold">Regenerate Codes</span> above.
+                        Cada código de recuperação pode ser utilizado uma vez para aceder ao seu
+                        conta e será removido após a utilização. Se precisar de mais,
+                        clique
+                        <span class="font-bold">Regenerar códigos</span>
                     </p>
                 </div>
             </div>

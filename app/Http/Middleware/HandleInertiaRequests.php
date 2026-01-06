@@ -2,7 +2,8 @@
 
 namespace App\Http\Middleware;
 
-use Illuminate\Foundation\Inspiring;
+
+use App\Constants\Inspiring;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
