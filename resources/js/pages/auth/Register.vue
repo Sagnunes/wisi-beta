@@ -35,7 +35,7 @@ import { Form, Head } from '@inertiajs/vue3';
                         :tabindex="1"
                         autocomplete="name"
                         name="name"
-                        placeholder="Full name"
+                        placeholder="Nome"
                     />
                     <InputError :message="errors.name" />
                 </div>
